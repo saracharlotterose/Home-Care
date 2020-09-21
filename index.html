@@ -17,6 +17,10 @@
           background-position: center;
           min-height: 1000px;
       }
+      .section{
+          padding-top: 4vw;
+          padding: bottom 4vw; 
+      }
       @media screen and (max-width: 670px){
           header {
               min-width: height 500px;;
@@ -53,7 +57,7 @@
   <section class="container section" id="photo's">
       <div class="row">
           <div class="col s12 l4">
-              <img src="img/portrait.jpg" alt="" class="responsive-img">
+              <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
           </div>
           <div class="col s12 l6 offset-l1">
               <h2 class="indigo-text text-darken-4">Portraits</h2>
@@ -62,16 +66,16 @@
       </div>
       <div class="row ">
         <div class="col s12 l4 push-l7">
-            <img src="img/city.jpg" alt="" class="responsive-img">
+            <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
         </div>
-        <div class="col s12 l6 pull-l4">
+        <div class="col s12 l6 pull-l4 right-align">
             <h2 class="indigo-text text-darken-4">Cityscapes</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, fugiat consectetur recusandae cupiditate aut, reiciendis, perferendis facere culpa odit quam deleniti obcaecati praesentium nisi nam. Nihil iure laboriosam ipsam facere!</p>
         </div>
     </div>
     <div class="row">
-        <div class="col s12 l4 offset-l1">
-            <img src="img/nature.jpg" alt="" class="responsive-img">
+        <div class="col s12 l4">
+            <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
         </div>
         <div class="col s12 l6">
             <h2 class="indigo-text text-darken-4">Nature</h2>
@@ -81,13 +85,35 @@
   </section>
 
   <!-- parallax -->
-
-  <!-- services / tabs -->
-
-  <!-- parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/street.jpg" alt="" class="responsive-img">
+    </div>
+</div>
+ 
+  
 
   <!-- contact form -->
-
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+  </div>
+   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/stars.jpg" alt="" class="responsive-img">
+    </div>
+</div>
+ <!-- contact form -->
+ <div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+  </div>
+ 
   <!-- footer -->
 
   <!-- Compiled and minified JavaScript -->
@@ -95,7 +121,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
-     $('.sidenav').sidenav();
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
     });
   </script>
 </body>
